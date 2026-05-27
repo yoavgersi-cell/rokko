@@ -120,7 +120,7 @@ export default function ServiceCards() {
               className="group flex flex-row items-start gap-3 md:gap-6"
             >
               {/* Mobile: compact square thumbnail */}
-              <div className="relative md:hidden w-[92px] h-[92px] flex-shrink-0 rounded-xl overflow-hidden">
+              <div className="relative md:hidden w-[92px] h-[92px] flex-shrink-0 rounded-xl overflow-hidden border border-black/10">
                 <Image
                   src={service.photo}
                   alt={service.label}
@@ -132,7 +132,7 @@ export default function ServiceCards() {
 
               {/* Desktop: large 4/3 image */}
               <div
-                className="relative hidden md:block md:w-60 flex-shrink-0 rounded-2xl overflow-hidden"
+                className="relative hidden md:block md:w-60 flex-shrink-0 rounded-2xl overflow-hidden border border-black/10"
                 style={{ aspectRatio: '4/3' }}
               >
                 <Image
