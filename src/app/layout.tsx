@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       "קהילת מארחי חיות המחמד הראשונה בישראל — לינה ביתית, טיולים, שמירה בבית וביקורי בית. אנשים אמיתיים, ביקורות כנות, קשר ישיר.",
     images: [
       {
-        url: "/hero-old.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Rokko - קהילת מארחי חיות המחמד בישראל",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     description:
       "קהילת מארחי חיות המחמד הראשונה בישראל — לינה ביתית, טיולים, שמירה בבית וביקורי בית.",
     images: [
-      "/hero-old.png",
+      "/og-image.png",
     ],
   },
   robots: {
