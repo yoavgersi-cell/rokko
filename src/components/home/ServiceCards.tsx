@@ -33,7 +33,7 @@ const CORE_SERVICES = [
     label: 'דוגווקר',
     tagline: 'דוגווקר קבוע שהכלב שלכם מכיר ואוהב',
     description: 'טיולים יומיים עם דוגווקר מנוסה שמכיר את הכלב שלכם באמת. עדכונים מכל טיול — ואתם ראש שקט בעבודה.',
-    photo: '/keep the man and dogs the same, make background much more realistic and natural looking, real urban environment.jpg',
+    photo: '/dogwalker-illustration.png',
     Icon: Footprints,
     tag: 'לכלבים',
     href: '/search?service=walking',
