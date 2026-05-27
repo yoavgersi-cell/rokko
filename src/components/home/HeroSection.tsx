@@ -145,10 +145,10 @@ export default function HeroSection() {
         <section className="relative overflow-hidden" style={{ minHeight: '40vh' }}>
           <div className="absolute inset-0 z-0">
             <Image
-              src="/hero-old.png"
+              src="/hero-mobile.png"
               alt="חיות מחמד מאושרות"
               fill
-              className="object-cover object-[center_18%]"
+              className="object-cover object-[center_20%]"
               priority
               sizes="100vw"
             />
