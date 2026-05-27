@@ -11,7 +11,7 @@ const CORE_SERVICES = [
     label: 'דוגסיטר',
     tagline: 'יחס אישי בבית פרטי',
     description: 'חיית המחמד שלכם נשארת בבית של הדוגסיטר — לא כלוב, לא פנסיון. סביבה ביתית, יחס אישי, ומישהו שבאמת שם בשבילה.',
-    photo: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=700&auto=format&fit=crop&q=80',
+    photo: '/ChatGPT Image May 27, 2026, 10_09_34 AM.png',
     Icon: BedDouble,
     tag: 'לכלבים וחתולים',
     href: '/search?service=boarding',
