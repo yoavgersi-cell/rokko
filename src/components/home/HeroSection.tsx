@@ -148,7 +148,7 @@ export default function HeroSection() {
               src="/hero-old.png"
               alt="חיות מחמד מאושרות"
               fill
-              className="object-cover object-[center_18%]"
+              className="object-cover object-[30%_18%]"
               priority
               sizes="100vw"
             />
