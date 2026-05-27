@@ -44,7 +44,7 @@ const CORE_SERVICES = [
     label: 'ביקורי בית',
     tagline: 'האכלה, משחק ובדיקה — בזמן שאתם לא בבית',
     description: 'מישהו שמגיע לבקר, להאכיל ולוודא שהכל בסדר. מצוין לחתולים ולכלבים שמסתדרים לבד רוב היום.',
-    photo: 'https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=700&auto=format&fit=crop&q=80',
+    photo: '/visiting-illustration.png',
     Icon: Clock,
     tag: 'לכלבים וחתולים',
     href: '/search?service=sitting',
