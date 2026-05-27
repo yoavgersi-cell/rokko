@@ -143,12 +143,12 @@ export default function HeroSection() {
       <div className="md:hidden">
         {/* Hero image */}
         <section className="relative overflow-hidden" style={{ minHeight: '40vh' }}>
-          <div className="absolute inset-0 z-0 bg-[#1a1210]">
+          <div className="absolute inset-0 z-0">
             <Image
               src="/hero-old.png"
               alt="חיות מחמד מאושרות"
               fill
-              className="object-cover scale-[0.72] origin-[40%_30%]"
+              className="object-cover object-[center_18%]"
               priority
               sizes="100vw"
             />
