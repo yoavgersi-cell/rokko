@@ -22,7 +22,7 @@ const CORE_SERVICES = [
     label: 'האוסיטינג',
     tagline: 'הדוגסיטר מגיע אליכם הביתה',
     description: 'חיית המחמד נשארת בסביבה המוכרת שלה. הדוגסיטר מגיע לבית שלכם — אוכל, שגרה, ושקט נפשי לשניכם.',
-    photo: '/Candid authentic photo of a person housesitting with a dog in a cozy home, natural indoor lighting, warm lived-in real home environment, genuine relaxed moment, real photography feel, no tongue out on dog.jpg',
+    photo: '/housesitting-illustration.png',
     Icon: Home,
     tag: 'לכלבים וחתולים',
     href: '/search?service=sitting',
