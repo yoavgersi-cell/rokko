@@ -82,19 +82,19 @@ function baseLayout(content: string): string {
 
 export async function sendProviderConfirmation(to: string, name: string) {
   const html = baseLayout(`
-    <p style="margin:0 0 8px;font-size:16px;color:#6B7280;">היי ${name},</p>
-    <h2 style="margin:0 0 20px;font-size:22px;font-weight:700;color:#1A1A1A;line-height:1.3;">
-      קיבלנו את בקשת ההצטרפות שלכם ל-Rokko
+    <h2 style="margin:0 0 16px;font-size:22px;font-weight:700;color:#1A1A1A;line-height:1.3;">
+      איזה כיף שהצטרפתם ל-Rokko 🐾
     </h2>
     <p style="margin:0 0 16px;font-size:15px;color:#374151;line-height:1.7;">
-      תודה שהצטרפתם. קיבלנו את הפרטים שלכם והבקשה עברה לבדיקה ידנית.
+      קיבלנו את הבקשה שלכם להצטרף לקהילת Rokko.
     </p>
     <p style="margin:0 0 16px;font-size:15px;color:#374151;line-height:1.7;">
-      אנחנו עוברים על כל פרופיל כדי לוודא שהוא מתאים לקהילה שאנחנו בונים — ונעדכן אתכם ברגע שהפרופיל יאושר, או אם נצטרך פרטים נוספים.
+      אנחנו עוברים עכשיו על הפרטים ששלחתם כדי לשמור על קהילה איכותית, בטוחה ואמיתית עבור בעלי חיות מחמד בישראל.
     </p>
     <p style="margin:0 0 28px;font-size:15px;color:#374151;line-height:1.7;">
-      תודה על הסבלנות.
+      נחזור אליכם בקרוב עם עדכון.
     </p>
+    <p style="margin:0 0 4px;font-size:15px;color:#374151;">תודה,</p>
     <p style="margin:0;font-size:15px;color:#6B7280;">
       צוות Rokko
     </p>
@@ -103,7 +103,7 @@ export async function sendProviderConfirmation(to: string, name: string) {
   return getResend().emails.send({
     from: FROM,
     to,
-    subject: 'קיבלנו את בקשת ההצטרפות שלכם ל-Rokko',
+    subject: 'איזה כיף — קיבלנו את הבקשה שלכם 🐾',
     html,
   });
 }
