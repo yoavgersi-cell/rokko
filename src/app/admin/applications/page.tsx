@@ -143,25 +143,38 @@ function ApplicationDetail({ app, onStatusChange }: {
         )}
 
         {/* Category-specific data */}
-        {Object.keys(catData).filter(k => {
-          const v = catData[k];
-          return v !== null && v !== undefined && v !== '' &&
-            !(Array.isArray(v) && v.length === 0);
-        }).length > 0 && (
+        {Object.keys(catData).length > 0 && (
           <div className="sm:col-span-2 lg:col-span-3">
             <p className="text-xs font-semibold text-[#6B7280] mb-2 uppercase tracking-wide">פרטים ספציפיים</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            <div className="space-y-3">
               {Object.entries(catData).filter(([, v]) =>
                 v !== null && v !== undefined && v !== '' &&
-                !(Array.isArray(v) && v.length === 0)
-              ).map(([k, v]) => (
-                <div key={k} className="bg-white rounded-lg border border-[#E8E8E6] px-3 py-2">
-                  <p className="text-[10px] font-semibold text-[#9CA3AF] uppercase mb-0.5">{k}</p>
-                  <p className="text-xs text-[#1A1A1A]">
-                    {Array.isArray(v) ? v.join(', ') : String(v)}
-                  </p>
-                </div>
-              ))}
+                !(Array.isArray(v) && (v as unknown[]).length === 0)
+              ).map(([k, v]) => {
+                const isObj = typeof v === 'object' && v !== null && !Array.isArray(v);
+                return (
+                  <div key={k} className="bg-white rounded-lg border border-[#E8E8E6] px-3 py-2">
+                    <p className="text-[10px] font-semibold text-[#9CA3AF] uppercase mb-1">{k}</p>
+                    {isObj ? (
+                      <div className="grid grid-cols-2 gap-x-4 gap-y-0.5">
+                        {Object.entries(v as Record<string, unknown>).filter(([, sv]) =>
+                          sv !== null && sv !== undefined && sv !== '' &&
+                          !(Array.isArray(sv) && (sv as unknown[]).length === 0)
+                        ).map(([sk, sv]) => (
+                          <p key={sk} className="text-xs text-[#374151]">
+                            <span className="text-[#9CA3AF]">{sk}: </span>
+                            {Array.isArray(sv) ? (sv as unknown[]).join(', ') : String(sv)}
+                          </p>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-xs text-[#1A1A1A]">
+                        {Array.isArray(v) ? (v as unknown[]).join(', ') : String(v)}
+                      </p>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
         )}
