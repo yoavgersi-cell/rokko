@@ -213,6 +213,36 @@ export async function sendRejectionEmail(to: string, name: string) {
   });
 }
 
+export async function sendProviderInviteEmail(to: string, name: string, inviteUrl: string) {
+  const html = baseLayout(`
+    <p style="margin:0 0 8px;font-size:16px;color:#6B7280;">היי ${name},</p>
+    <h2 style="margin:0 0 20px;font-size:22px;font-weight:700;color:#1A1A1A;line-height:1.3;">
+      הפרופיל שלכם ב-Rokko אושר 🎉
+    </h2>
+    <p style="margin:0 0 16px;font-size:15px;color:#374151;line-height:1.7;">
+      שמחים שאתם חלק מהקהילה שאנחנו בונים. כדי לנהל את הפרופיל שלכם, לעדכן פרטים ולראות פניות מלקוחות, הגדירו סיסמה לחשבון שלכם.
+    </p>
+    <div style="margin:28px 0;">
+      <a href="${inviteUrl}" style="display:inline-block;padding:14px 28px;background:#2D7D5A;color:#FFFFFF;font-size:15px;font-weight:700;border-radius:12px;text-decoration:none;">
+        הגדירו סיסמה לחשבון שלכם
+      </a>
+    </div>
+    <p style="margin:0 0 16px;font-size:13px;color:#9CA3AF;line-height:1.6;">
+      הקישור תקף ל-7 ימים. אם לא ביקשתם להצטרף ל-Rokko, אפשר להתעלם מהמייל הזה.
+    </p>
+    <p style="margin:0;font-size:15px;color:#6B7280;">
+      צוות Rokko
+    </p>
+  `);
+
+  return getResend().emails.send({
+    from: FROM,
+    to,
+    subject: 'הפרופיל שלכם ב-Rokko אושר — הגדירו סיסמה',
+    html,
+  });
+}
+
 export async function sendNeedsInfoEmail(to: string, name: string, note: string) {
   const html = baseLayout(`
     <p style="margin:0 0 8px;font-size:16px;color:#6B7280;">היי ${name},</p>
