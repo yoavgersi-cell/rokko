@@ -6,8 +6,8 @@ import { ClipboardCheck, PhoneCall, MessageCircle, Award } from 'lucide-react';
 const ITEMS = [
   {
     Icon: ClipboardCheck,
-    title: 'בדיקה ידנית לכל ספק',
-    text: 'כל ספק שעולה לפלטפורמה עובר בדיקה ידנית לפני אישור.',
+    title: 'אימות אישי לכל פרופיל',
+    text: 'כל פרופיל עובר בדיקה ידנית ואימות על ידי צוות Rokko לפני שהוא עולה לאוויר.',
   },
   {
     Icon: PhoneCall,
