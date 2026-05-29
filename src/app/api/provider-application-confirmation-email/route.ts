@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
       await sendProviderConfirmation(email, full_name);
     } catch (emailErr) {
       console.error('[confirmation-email] Resend failed:', emailErr);
-      // Do not fail — return success so the onboarding flow is never blocked
+      // Do not fail - return success so the onboarding flow is never blocked
     }
 
     return NextResponse.json({ success: true });

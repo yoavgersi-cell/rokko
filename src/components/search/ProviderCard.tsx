@@ -58,7 +58,7 @@ export default function ProviderCard({ provider }: ProviderCardProps) {
             </div>
           )}
 
-          {/* Provider Avatar — overlapping */}
+          {/* Provider Avatar - overlapping */}
           <div className="absolute -bottom-5 right-4 w-12 h-12 rounded-full border-3 border-white overflow-hidden shadow-md" style={{ borderWidth: 3 }}>
             <Image
               src={provider.avatar}

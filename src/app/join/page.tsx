@@ -48,7 +48,7 @@ const EXPERIENCE_OPTIONS = [
 // ─── Form state ───────────────────────────────────────────────────────────────
 
 type FormData = {
-  // Step 1 — contact
+  // Step 1 - contact
   full_name: string;
   business_name: string;
   phone: string;
@@ -330,7 +330,7 @@ function FileUpload({ files, onChange }: { files: UploadedFile[]; onChange: (f: 
       >
         <Upload className="w-7 h-7 text-[#9CA3AF] mx-auto mb-3" strokeWidth={1.5} />
         <p className="text-sm font-medium text-[#374151]">גררו קבצים לכאן או לחצו לבחירה</p>
-        <p className="text-xs text-[#9CA3AF] mt-1">תמונות וסרטונים — עד 50MB לקובץ</p>
+        <p className="text-xs text-[#9CA3AF] mt-1">תמונות וסרטונים - עד 50MB לקובץ</p>
         <input
           ref={inputRef}
           type="file"
@@ -615,14 +615,14 @@ function ServicesScreen({
             onClick={onContinue}
             className="w-full py-3.5 bg-[#2D7D5A] text-white rounded-xl font-bold text-base hover:bg-[#236247] transition-colors"
           >
-            המשך — {selected.length} {selected.length === 1 ? 'שירות נבחר' : 'שירותים נבחרו'} ←
+            המשך - {selected.length} {selected.length === 1 ? 'שירות נבחר' : 'שירותים נבחרו'} ←
           </button>
         </motion.div>
       )}
 
       <BottomBar
         label={selected.length > 0
-          ? `המשך — ${selected.length} ${selected.length === 1 ? 'שירות' : 'שירותים'} ←`
+          ? `המשך - ${selected.length} ${selected.length === 1 ? 'שירות' : 'שירותים'} ←`
           : 'בחרו לפחות שירות אחד'}
         onClick={onContinue}
         disabled={selected.length === 0}
@@ -666,7 +666,7 @@ function SharedPetCareSection({ form, set }: { form: FormData; set: SetFn }) {
 function BoardingSection({ form, set }: { form: FormData; set: SetFn }) {
   return (
     <div className="space-y-5">
-      <SectionHeader>🏠 דוגסיטר — על הבית שלכם</SectionHeader>
+      <SectionHeader>🏠 דוגסיטר - על הבית שלכם</SectionHeader>
       <Field label="האירוח מתבצע ב:">
         <RadioGroup value={form.is_home_based} onChange={v => set('is_home_based', v)}
           options={[{ value: 'apartment', label: 'דירה' }, { value: 'house', label: 'בית פרטי' }]} />
@@ -698,7 +698,7 @@ function BoardingSection({ form, set }: { form: FormData; set: SetFn }) {
 function SittingSection({ form, set }: { form: FormData; set: SetFn }) {
   return (
     <div className="space-y-5">
-      <SectionHeader>🏡 האוסיטינג — על השירות שלכם</SectionHeader>
+      <SectionHeader>🏡 האוסיטינג - על השירות שלכם</SectionHeader>
       <Field label="לאילו חיות אתם מגיעים?">
         <CheckboxGroup values={form.sitting_animals} onChange={v => set('sitting_animals', v)}
           options={['כלבים', 'חתולים', 'ציפורים ומכרסמים', 'אחר']} />
@@ -714,7 +714,7 @@ function SittingSection({ form, set }: { form: FormData; set: SetFn }) {
 function WalkingSection({ form, set }: { form: FormData; set: SetFn }) {
   return (
     <div className="space-y-5">
-      <SectionHeader>🦮 דוגווקר — על הטיולים שלכם</SectionHeader>
+      <SectionHeader>🦮 דוגווקר - על הטיולים שלכם</SectionHeader>
       <Field label="סוג הטיול:">
         <RadioGroup value={form.walk_type} onChange={v => set('walk_type', v)}
           options={[{ value: 'private', label: 'פרטי בלבד' }, { value: 'group', label: 'קבוצתי' }, { value: 'both', label: 'שניהם' }]} />
@@ -736,7 +736,7 @@ function WalkingSection({ form, set }: { form: FormData; set: SetFn }) {
 function VisitingSection({ form, set }: { form: FormData; set: SetFn }) {
   return (
     <div className="space-y-5">
-      <SectionHeader>🏠 ביקורי בית — על השירות שלכם</SectionHeader>
+      <SectionHeader>🏠 ביקורי בית - על השירות שלכם</SectionHeader>
       <Field label="לאילו חיות אתם מגיעים?">
         <CheckboxGroup values={form.visiting_animals} onChange={v => set('visiting_animals', v)}
           options={['כלבים', 'חתולים', 'ציפורים', 'אחר']} />
@@ -756,7 +756,7 @@ function VisitingSection({ form, set }: { form: FormData; set: SetFn }) {
 function PensionSection({ form, set, errors }: { form: FormData; set: SetFn; errors: Partial<Record<keyof FormData, string>> }) {
   return (
     <div className="space-y-5">
-      <SectionHeader>🏢 פנסיון — על המקום שלכם</SectionHeader>
+      <SectionHeader>🏢 פנסיון - על המקום שלכם</SectionHeader>
       <Field label="שם הפנסיון">
         <Input value={form.pension_name} onChange={v => set('pension_name', v)} placeholder="שם הפנסיון" />
       </Field>
@@ -796,7 +796,7 @@ function PensionSection({ form, set, errors }: { form: FormData; set: SetFn; err
 function VetSection({ form, set, errors }: { form: FormData; set: SetFn; errors: Partial<Record<keyof FormData, string>> }) {
   return (
     <div className="space-y-5">
-      <SectionHeader>🩺 וטרינר — על השירות שלכם</SectionHeader>
+      <SectionHeader>🩺 וטרינר - על השירות שלכם</SectionHeader>
       <Field label="סוג השירות:">
         <RadioGroup value={form.vet_type} onChange={v => set('vet_type', v)}
           options={[{ value: 'clinic', label: 'מרפאה בלבד' }, { value: 'mobile', label: 'ביקורי בית בלבד' }, { value: 'both', label: 'גם וגם' }]} />
@@ -835,7 +835,7 @@ function VetSection({ form, set, errors }: { form: FormData; set: SetFn; errors:
 function TrainingSection({ form, set, errors }: { form: FormData; set: SetFn; errors: Partial<Record<keyof FormData, string>> }) {
   return (
     <div className="space-y-5">
-      <SectionHeader>🎓 אילוף — על השירות שלכם</SectionHeader>
+      <SectionHeader>🎓 אילוף - על השירות שלכם</SectionHeader>
       <Field label="סוגי אילוף:">
         <CheckboxGroup values={form.training_types} onChange={v => set('training_types', v)}
           options={['הכשרת גורים', 'ציות בסיסי', 'טיפול בפחדים', 'אילוף ספורטיבי', 'שיטות חיוביות בלבד']} />
@@ -860,7 +860,7 @@ function TrainingSection({ form, set, errors }: { form: FormData; set: SetFn; er
 function GroomingSection({ form, set, errors }: { form: FormData; set: SetFn; errors: Partial<Record<keyof FormData, string>> }) {
   return (
     <div className="space-y-5">
-      <SectionHeader>✂️ טיפוח — על השירות שלכם</SectionHeader>
+      <SectionHeader>✂️ טיפוח - על השירות שלכם</SectionHeader>
       <Field label="סוג השירות:">
         <RadioGroup value={form.grooming_type} onChange={v => set('grooming_type', v)}
           options={[{ value: 'salon', label: 'מספרה קבועה' }, { value: 'mobile', label: 'ניידת' }, { value: 'both', label: 'שניהם' }]} />
@@ -888,7 +888,7 @@ function GroomingSection({ form, set, errors }: { form: FormData; set: SetFn; er
 function InsuranceSection({ form, set, errors }: { form: FormData; set: SetFn; errors: Partial<Record<keyof FormData, string>> }) {
   return (
     <div className="space-y-5">
-      <SectionHeader>🛡️ ביטוח — פרטי החברה</SectionHeader>
+      <SectionHeader>🛡️ ביטוח - פרטי החברה</SectionHeader>
       <Field label="שם החברה">
         <Input value={form.company_name} onChange={v => set('company_name', v)} placeholder="שם חברת הביטוח" />
       </Field>
@@ -960,7 +960,7 @@ function Step3Media({ mediaFiles, setMediaFiles }: {
       <div>
         <FileUpload files={mediaFiles} onChange={setMediaFiles} />
         <p className="text-xs text-[#9CA3AF] mt-2 text-center">
-          תמונות מהבית, עם כלבים, מהחצר — כל תמונה עוזרת
+          תמונות מהבית, עם כלבים, מהחצר - כל תמונה עוזרת
         </p>
       </div>
       <div className="flex items-start gap-3 p-4 bg-[#E8F5EE] rounded-xl">
@@ -1225,7 +1225,7 @@ function JoinPageInner() {
               <p className="text-sm text-[#6B7280] mb-8">
                 {selectedServices.length === 1
                   ? 'ספרו לנו קצת על השירות שלכם'
-                  : `בחרתם ${selectedServices.length} שירותים — ספרו לנו קצת על כל אחד`}
+                  : `בחרתם ${selectedServices.length} שירותים - ספרו לנו קצת על כל אחד`}
               </p>
               <Step2ServiceFields services={selectedServices} form={form} set={setField} errors={errors} />
               <div className="hidden sm:block mt-8">

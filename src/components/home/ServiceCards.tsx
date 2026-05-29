@@ -10,7 +10,7 @@ const CORE_SERVICES = [
     id: 'boarding',
     label: 'דוגסיטר',
     tagline: 'יחס אישי בבית פרטי',
-    description: 'חיית המחמד שלכם נשארת בבית של הדוגסיטר — לא כלוב, לא פנסיון. סביבה ביתית, יחס אישי, ומישהו שבאמת שם בשבילה.',
+    description: 'חיית המחמד שלכם נשארת בבית של הדוגסיטר - לא כלוב, לא פנסיון. סביבה ביתית, יחס אישי, ומישהו שבאמת שם בשבילה.',
     photo: '/dogsitter-illustration.png',
     Icon: BedDouble,
     tag: 'לכלבים וחתולים',
@@ -21,7 +21,7 @@ const CORE_SERVICES = [
     id: 'sitting',
     label: 'האוסיטינג',
     tagline: 'הדוגסיטר מגיע אליכם הביתה',
-    description: 'חיית המחמד נשארת בסביבה המוכרת שלה. הדוגסיטר מגיע לבית שלכם — אוכל, שגרה, ושקט נפשי לשניכם.',
+    description: 'חיית המחמד נשארת בסביבה המוכרת שלה. הדוגסיטר מגיע לבית שלכם - אוכל, שגרה, ושקט נפשי לשניכם.',
     photo: '/housesitting-illustration.png',
     Icon: Home,
     tag: 'לכלבים וחתולים',
@@ -32,7 +32,7 @@ const CORE_SERVICES = [
     id: 'walking',
     label: 'דוגווקר',
     tagline: 'דוגווקר קבוע שהכלב שלכם מכיר ואוהב',
-    description: 'טיולים יומיים עם דוגווקר מנוסה שמכיר את הכלב שלכם באמת. עדכונים מכל טיול — ואתם ראש שקט בעבודה.',
+    description: 'טיולים יומיים עם דוגווקר מנוסה שמכיר את הכלב שלכם באמת. עדכונים מכל טיול - ואתם ראש שקט בעבודה.',
     photo: '/dogwalker-illustration.png',
     Icon: Footprints,
     tag: 'לכלבים',
@@ -42,7 +42,7 @@ const CORE_SERVICES = [
   {
     id: 'visiting',
     label: 'ביקורי בית',
-    tagline: 'האכלה, משחק ובדיקה — בזמן שאתם לא בבית',
+    tagline: 'האכלה, משחק ובדיקה - בזמן שאתם לא בבית',
     description: 'מישהו שמגיע לבקר, להאכיל ולוודא שהכל בסדר. מצוין לחתולים ולכלבים שמסתדרים לבד רוב היום.',
     photo: '/visiting-illustration.png',
     Icon: Clock,
@@ -72,7 +72,7 @@ const ADDITIONAL_SERVICES = [
   {
     id: 'vet-clinic',
     label: 'וטרינרים',
-    description: 'מרפאות שבעלי חיות ממליצים עליהן — שעות, מיקום ומומחיות. כולל חירום.',
+    description: 'מרפאות שבעלי חיות ממליצים עליהן - שעות, מיקום ומומחיות. כולל חירום.',
     Icon: Stethoscope,
     href: '/search?service=vet',
     cta: 'מצאו קליניקה',
@@ -104,7 +104,7 @@ export default function ServiceCards() {
             מה תמצאו ב-Rokko
           </h2>
           <p className="text-[#6B7280] text-sm">
-            דוגסיטרים, דוגווקרים, פנסיונים ווטרינרים — אנשים שאפשר לסמוך עליהם
+            דוגסיטרים, דוגווקרים, פנסיונים ווטרינרים - אנשים שאפשר לסמוך עליהם
           </p>
         </motion.div>
 

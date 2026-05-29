@@ -138,7 +138,7 @@ export default function HeroSection() {
   return (
     <>
       {/* ═══════════════════════════════════════
-          MOBILE — Premium compact hero
+          MOBILE - Premium compact hero
           ═══════════════════════════════════════ */}
       <div className="md:hidden">
         {/* Hero image */}
@@ -173,7 +173,7 @@ export default function HeroSection() {
             </AnimatePresence>
           </div>
 
-          {/* Headline only — clean and focused */}
+          {/* Headline only - clean and focused */}
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -190,7 +190,7 @@ export default function HeroSection() {
           </motion.div>
         </section>
 
-        {/* Search card — unified, floating over hero */}
+        {/* Search card - unified, floating over hero */}
         <div className="relative z-20 -mt-7 mx-3">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -245,7 +245,7 @@ export default function HeroSection() {
           </motion.div>
         </div>
 
-        {/* Trust signals — compact single row */}
+        {/* Trust signals - compact single row */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -262,7 +262,7 @@ export default function HeroSection() {
       </div>
 
       {/* ═══════════════════════════════════════
-          DESKTOP — original full-screen layout
+          DESKTOP - original full-screen layout
           ═══════════════════════════════════════ */}
       <section
         className="relative hidden md:flex items-center justify-center overflow-hidden"

@@ -7,8 +7,8 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
 
     const {
-      services,           // string[] — new multi-service array
-      provider_type,      // string  — first service (backwards compat)
+      services,           // string[] - new multi-service array
+      provider_type,      // string  - first service (backwards compat)
       full_name, business_name, phone, whatsapp, email,
       city, service_areas, social_instagram, social_facebook, social_website,
       description, notes, media_urls,

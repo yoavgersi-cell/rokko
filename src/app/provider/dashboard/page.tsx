@@ -40,7 +40,7 @@ function StatusCard({ provider }: { provider: Provider }) {
   const config = provider.is_published
     ? { label: 'פורסם באתר', color: 'bg-[#E8F5EE] text-[#2D7D5A]', Icon: CheckCircle }
     : provider.status === 'approved'
-    ? { label: 'מאושר — לא פורסם עדיין', color: 'bg-[#D1FAE5] text-[#065F46]', Icon: CheckCircle }
+    ? { label: 'מאושר - לא פורסם עדיין', color: 'bg-[#D1FAE5] text-[#065F46]', Icon: CheckCircle }
     : { label: 'ממתין לאישור', color: 'bg-[#FEF3C7] text-[#92400E]', Icon: Clock };
 
   return (
@@ -163,7 +163,7 @@ function ProfileEditor({ provider, onSaved }: { provider: Provider; onSaved: (p:
             ) : (
               <p className="text-sm text-[#374151] flex items-center gap-1">
                 <MapPin className="w-3.5 h-3.5 text-[#9CA3AF]" />
-                {provider.city || <span className="text-[#9CA3AF]">—</span>}
+                {provider.city || <span className="text-[#9CA3AF]">-</span>}
               </p>
             )}
           </div>
@@ -174,7 +174,7 @@ function ProfileEditor({ provider, onSaved }: { provider: Provider; onSaved: (p:
                 placeholder="תל אביב, רמת גן..." className={inputCls} />
             ) : (
               <p className="text-sm text-[#374151]">
-                {provider.service_areas || <span className="text-[#9CA3AF]">—</span>}
+                {provider.service_areas || <span className="text-[#9CA3AF]">-</span>}
               </p>
             )}
           </div>
@@ -188,7 +188,7 @@ function ProfileEditor({ provider, onSaved }: { provider: Provider; onSaved: (p:
               placeholder="05X-XXXXXXX" dir="ltr" className={inputCls} />
           ) : (
             <p className="text-sm text-[#374151] dir-ltr">
-              {provider.whatsapp || <span className="text-[#9CA3AF]">—</span>}
+              {provider.whatsapp || <span className="text-[#9CA3AF]">-</span>}
             </p>
           )}
         </div>
@@ -301,7 +301,7 @@ export default function ProviderDashboard() {
         {/* Preview button */}
         <div className="flex justify-center pb-4">
           <button
-            onClick={() => alert('בקרוב — תצוגת הפרופיל הציבורי מוכנה כשנשיק את האתר')}
+            onClick={() => alert('בקרוב - תצוגת הפרופיל הציבורי מוכנה כשנשיק את האתר')}
             className="flex items-center gap-2 px-5 py-2.5 border border-[#E8E8E6] rounded-xl text-sm font-semibold text-[#374151] hover:bg-white transition-colors"
           >
             <Eye className="w-4 h-4" />

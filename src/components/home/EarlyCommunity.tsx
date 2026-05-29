@@ -20,7 +20,7 @@ export default function EarlyCommunity() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          {/* Social proof bar — compact single row on mobile */}
+          {/* Social proof bar - compact single row on mobile */}
           <div className="flex items-center gap-4 md:gap-5 mb-5 md:mb-7 flex-wrap">
             {STATS.map(({ Icon, label }) => (
               <div key={label} className="flex items-center gap-1.5">
@@ -38,7 +38,7 @@ export default function EarlyCommunity() {
 
           <div className="space-y-2.5 md:space-y-3.5 mb-6 md:mb-8">
             <p className="text-[#9CA3AF] text-sm leading-relaxed">
-              עד היום זה עבד ככה: פרסום בקבוצת פייסבוק, קבלת 40 תגובות, ניסיון להבין מי רציני — ואז ניהול שיחות בוואטסאפ עם 10 אנשים שונים.
+              עד היום זה עבד ככה: פרסום בקבוצת פייסבוק, קבלת 40 תגובות, ניסיון להבין מי רציני - ואז ניהול שיחות בוואטסאפ עם 10 אנשים שונים.
             </p>
 
             <p className="text-white text-sm leading-relaxed font-semibold">
@@ -46,7 +46,7 @@ export default function EarlyCommunity() {
             </p>
 
             <p className="text-[#9CA3AF] text-sm leading-relaxed">
-              מקום אחד למצוא דוגסיטרים, דוגווקרים, פנסיונים ווטרינרים — עם פרופילים אמיתיים, ביקורות מבעלי חיות שכבר השתמשו בשירות, ודרך פשוטה לפנות ישירות.
+              מקום אחד למצוא דוגסיטרים, דוגווקרים, פנסיונים ווטרינרים - עם פרופילים אמיתיים, ביקורות מבעלי חיות שכבר השתמשו בשירות, ודרך פשוטה לפנות ישירות.
             </p>
           </div>
 

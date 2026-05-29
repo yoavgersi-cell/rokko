@@ -36,7 +36,7 @@ export default function FeaturedProviders() {
           </Link>
         </motion.div>
 
-        {/* Grid — horizontal scroll on mobile */}
+        {/* Grid - horizontal scroll on mobile */}
         <div className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory md:grid md:grid-cols-4 md:overflow-visible md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
           {providers.map((provider, index) => (
             <motion.div

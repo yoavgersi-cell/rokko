@@ -89,7 +89,7 @@ export default function RootLayout({
               name: "Rokko",
               url: "https://rokko.co.il",
               description:
-                "קהילת מארחי חיות המחמד הראשונה בישראל — לינה ביתית, טיולים, שמירה בבית וביקורי בית.",
+                "קהילת מארחי חיות המחמד הראשונה בישראל - לינה ביתית, טיולים, שמירה בבית וביקורי בית.",
               areaServed: "IL",
               inLanguage: "he",
             }),

@@ -28,7 +28,7 @@ export default function BecomeProviderBanner() {
             </h2>
 
             <p className="text-[#6B7280] leading-relaxed mb-5 md:mb-7 text-sm">
-              Rokko מחפשת אנשים שאוהבים חיות ורוצים לעשות מזה משהו. ההצטרפות ללא עלות — כל פרופיל עובר בדיקה ידנית לפני שעולה לאתר.
+              Rokko מחפשת אנשים שאוהבים חיות ורוצים לעשות מזה משהו. ההצטרפות ללא עלות - כל פרופיל עובר בדיקה ידנית לפני שעולה לאתר.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-2.5 md:gap-3">
@@ -48,7 +48,7 @@ export default function BecomeProviderBanner() {
             </div>
           </motion.div>
 
-          {/* Image — hidden on mobile */}
+          {/* Image - hidden on mobile */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

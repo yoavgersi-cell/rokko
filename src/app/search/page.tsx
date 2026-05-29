@@ -17,7 +17,7 @@ export default function SearchPage() {
         </h1>
 
         <p className="text-[#6B7280] text-base leading-relaxed max-w-sm mb-3">
-          אנחנו בונים את Rokko עכשיו — מוסיפים דוגסיטרים, דוגווקרים, פנסיונים ווטרינרים שאפשר לסמוך עליהם.
+          אנחנו בונים את Rokko עכשיו - מוסיפים דוגסיטרים, דוגווקרים, פנסיונים ווטרינרים שאפשר לסמוך עליהם.
         </p>
         <p className="text-[#6B7280] text-base leading-relaxed max-w-xs mb-10">
           בעוד כמה ימים נפתח את השירות לכולם. כבר מתרגשים.

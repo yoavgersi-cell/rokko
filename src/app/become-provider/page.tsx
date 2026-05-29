@@ -443,10 +443,10 @@ function Step4({
         <div className="bg-[#FAFAF8] rounded-2xl p-5 border border-[#E8E8E6]">
           <h4 className="font-semibold text-[#2D7D5A] mb-3 text-sm">פרטים אישיים</h4>
           <div className="grid grid-cols-2 gap-2 text-sm">
-            <div><span className="text-[#6B7280]">שם:</span> <span className="font-medium">{data.fullName || '—'}</span></div>
-            <div><span className="text-[#6B7280]">עיר:</span> <span className="font-medium">{data.city || '—'}</span></div>
-            <div><span className="text-[#6B7280]">שכונה:</span> <span className="font-medium">{data.neighborhood || '—'}</span></div>
-            <div><span className="text-[#6B7280]">ווטסאפ:</span> <span className="font-medium">{data.whatsapp || '—'}</span></div>
+            <div><span className="text-[#6B7280]">שם:</span> <span className="font-medium">{data.fullName || '-'}</span></div>
+            <div><span className="text-[#6B7280]">עיר:</span> <span className="font-medium">{data.city || '-'}</span></div>
+            <div><span className="text-[#6B7280]">שכונה:</span> <span className="font-medium">{data.neighborhood || '-'}</span></div>
+            <div><span className="text-[#6B7280]">ווטסאפ:</span> <span className="font-medium">{data.whatsapp || '-'}</span></div>
           </div>
           {data.bio && <p className="text-[#4B5563] text-xs mt-3 line-clamp-2">{data.bio}</p>}
         </div>
@@ -473,11 +473,11 @@ function Step4({
           <h4 className="font-semibold text-[#2D7D5A] mb-3 text-sm">סביבת הבית</h4>
           <div className="grid grid-cols-2 gap-2 text-sm">
             <div><span className="text-[#6B7280]">סוג בית:</span> <span className="font-medium">
-              {data.homeType === 'house' ? 'בית פרטי' : data.homeType === 'apartment' ? 'דירה' : data.homeType === 'yard' ? 'עם חצר' : '—'}
+              {data.homeType === 'house' ? 'בית פרטי' : data.homeType === 'apartment' ? 'דירה' : data.homeType === 'yard' ? 'עם חצר' : '-'}
             </span></div>
-            <div><span className="text-[#6B7280]">כלבים אחרים:</span> <span className="font-medium">{data.hasOtherDogs === null ? '—' : data.hasOtherDogs ? 'כן' : 'לא'}</span></div>
-            <div><span className="text-[#6B7280]">חתולים:</span> <span className="font-medium">{data.hasCats === null ? '—' : data.hasCats ? 'כן' : 'לא'}</span></div>
-            <div><span className="text-[#6B7280]">ילדים:</span> <span className="font-medium">{data.hasChildren === null ? '—' : data.hasChildren ? 'כן' : 'לא'}</span></div>
+            <div><span className="text-[#6B7280]">כלבים אחרים:</span> <span className="font-medium">{data.hasOtherDogs === null ? '-' : data.hasOtherDogs ? 'כן' : 'לא'}</span></div>
+            <div><span className="text-[#6B7280]">חתולים:</span> <span className="font-medium">{data.hasCats === null ? '-' : data.hasCats ? 'כן' : 'לא'}</span></div>
+            <div><span className="text-[#6B7280]">ילדים:</span> <span className="font-medium">{data.hasChildren === null ? '-' : data.hasChildren ? 'כן' : 'לא'}</span></div>
             <div><span className="text-[#6B7280]">מקסימום כלבים:</span> <span className="font-medium">{data.maxDogs}</span></div>
           </div>
         </div>
@@ -562,7 +562,7 @@ export default function BecomeProviderPage() {
                 הצטרפו אלינו ב-Rokko
               </h1>
               <p className="text-[#6B7280]">
-                אנשים שאוהבים חיות ורוצים לעזור — זה כל מה שצריך
+                אנשים שאוהבים חיות ורוצים לעזור - זה כל מה שצריך
               </p>
             </div>
           )}

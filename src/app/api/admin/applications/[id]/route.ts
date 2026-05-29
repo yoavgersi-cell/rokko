@@ -19,7 +19,7 @@ async function createProviderAndInvite(db: ReturnType<typeof createServiceClient
 
   if (!app) return null;
 
-  // Upsert provider record (idempotent — safe to call multiple times)
+  // Upsert provider record (idempotent - safe to call multiple times)
   const { data: existing } = await db
     .from('providers')
     .select('id, user_id')
@@ -127,7 +127,7 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
       // First-time approval → create provider record + send invite with password link
       await createProviderAndInvite(db, id);
     } else if (nowApproved && wasApproved) {
-      // Re-approve (e.g. published after approved) — just update is_published flag
+      // Re-approve (e.g. published after approved) - just update is_published flag
       await db
         .from('providers')
         .update({ is_published: status === 'published' })
